@@ -1,0 +1,222 @@
+{% extends 'homepage/base.html' %}
+{% load static %}
+
+{% block title %}Welkom bij BirchWeb{% endblock %}
+
+{% block content %}
+<section id="hero" class="hero section dark-background">
+
+  <div class="container">
+    <div class="row gy-4">
+      <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center" data-aos="zoom-out">
+        <h1>Professionele websites die passen bij jouw doelen</h1>
+        <p>Bij BirchWeb werken we samen om een website te creëren die jouw verhaal vertelt. Wij luisteren naar jouw wensen en combineren deze met onze expertise. 
+          Samen realiseren we een professionele website die perfect aansluit bij jouw merk.</p>
+        <div class="d-flex">
+          <a href="#about" class="btn-get-started">Onze diensten</a>
+          <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-chat-dots"></i><span>Neem contact op</span></a>
+        </div>
+      </div>
+      <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-out" data-aos-delay="200">
+        <img src="{% static 'homepage/img/char1.png' %}" class="img-fluid animated" alt="">
+      </div>
+    </div>
+  </div>
+
+</section>
+<!-- /Hero Section -->
+
+ <!-- About Section -->
+ <section id="about" class="about section">
+
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Over ons</h2>
+  </div><!-- End Section Title -->
+
+  <div class="container">
+
+    <div class="row gy-4">
+
+      <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="100">
+        <p>
+          Bij BirchWeb creëren we toegankelijke, op maat gemaakte websites die passen bij de unieke behoeften van kleine bedrijven.
+        </p>
+        <ul>
+          <li><i class="bi bi-check2-square"></i> <span>Professionele en snelle ontwikkeling</span></li>
+          <li><i class="bi bi-check2-square"></i> <span>Focus op gebruiksvriendelijke interfaces</span></li>
+          <li><i class="bi bi-check2-square"></i> <span>Betaalbare prijzen zonder verborgen kosten</span></li>
+          <li><i class="bi bi-check2-square"></i> <span>Flexibele onderhoudsopties</span></li>
+        </ul>
+      </div>
+
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+        <p>
+          Bij BirchWeb combineren we technologie en creativiteit om websites te bouwen die jouw bedrijf helpen groeien.
+          We geloven in eenvoud, kwaliteit en persoonlijke service, waarbij we nauw samenwerken met onze klanten om hun visie online te realiseren. 
+          Of je nu een eenvoudige website nodig hebt of een meer complexe oplossing, 
+          wij zorgen ervoor dat je online aanwezigheid niet alleen functioneel is, maar ook past bij je merk en doelen.
+        </p>
+        <a href="#" class="read-more"><span>Lees meer</span><i class="bi bi-arrow-right-circle-fill"></i></a>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+<!-- /About Section -->
+
+<!-- Why Us Section -->
+<section id="why-us" class="section why-us light-background" data-builder="section">
+
+  <div class="container-fluid">
+
+    <div class="row gy-4">
+
+      <div class="col-lg-7 d-flex flex-column justify-content-center order-2 order-lg-1">
+
+        <div class="content px-xl-5" data-aos="fade-up" data-aos-delay="100">
+          <h3>
+            <span>Weboplossingen</span><strong> op maat</strong><span> voor jouw bedrijf</span>
+          </h3>
+          <p>
+            Bij BirchWeb bieden we professionele webdesign oplossingen 
+            die zijn afgestemd op de unieke behoeften van lokale bedrijven.<br> 
+            Ontdek hoe we jouw online aanwezigheid kunnen verbeteren.
+          </p>
+        </div>
+
+        <div class="faq-container px-xl-5" data-aos="fade-up" data-aos-delay="200">
+
+          <div class="faq-item faq-active">
+
+            <h3><span><i class="bi bi-brush"></i></span> Website design</h3>
+            <div class="faq-content">
+              <p>Bij BirchWeb ontwerpen we unieke websites die niet alleen visueel aantrekkelijk zijn, 
+                maar ook functioneel en gebruiksvriendelijk. We werken nauw samen met jou om jouw visie 
+                te vertalen naar een website die je doelgroep aanspreekt en je bedrijfsdoelen ondersteunt.</p>
+            </div>
+            <i class="faq-toggle bi bi-chevron-right"></i>
+          </div><!-- End Faq item-->
+
+          <div class="faq-item">
+            <h3><span><i class="bi bi-tools"></i></span> Website onderhoud</h3>
+            <div class="faq-content">
+              <p>Het onderhouden van een website is cruciaal voor de prestaties en veiligheid. 
+                Met onze onderhoudsdiensten zorgen we ervoor dat jouw website altijd up-to-date is 
+                met de nieuwste technologieën en beveiligingsupdates. 
+                Wij monitoren de prestaties en lossen problemen snel op, zodat jij je kunt richten op je bedrijf.</p>
+            </div>
+            <i class="faq-toggle bi bi-chevron-right"></i>
+          </div><!-- End Faq item-->
+
+          <div class="faq-item">
+            <h3><span><i class="bi bi-search"></i></span> Zoekmachineoptimalisatie (SEO)</h3>
+            <div class="faq-content">
+              <p>Onze SEO-diensten helpen je om beter gevonden te worden in zoekmachines zoals Google. 
+                We analyseren je huidige website en geven je advies over zoekwoorden, contentoptimalisatie, 
+                en technische aanpassingen die jouw ranking kunnen verbeteren. 
+                Met effectieve SEO-strategieën trekken we meer relevante bezoekers naar je site.</p>
+            </div>
+            <i class="faq-toggle bi bi-chevron-right"></i>
+          </div><!-- End Faq item-->
+
+          <div class="faq-item">
+            <h3><span><i class="bi bi-phone"></i></span> Responsive design</h3>
+            <div class="faq-content">
+              <p>In de huidige digitale wereld is het essentieel dat je website goed werkt op verschillende apparaten, 
+                van smartphones tot desktops. Met ons responsive design zorgen we ervoor dat jouw website zich aanpast aan het schermformaat van de gebruiker, 
+                waardoor de gebruikservaring optimaler wordt. Dit verhoogt niet alleen de tevredenheid van de bezoekers, 
+                maar ook de kans op conversies.</p>
+            </div>
+            <i class="faq-toggle bi bi-chevron-right"></i>
+          </div><!-- End Faq item-->
+
+          <div class="faq-item">
+            <h3><span><i class="bi bi-upc-scan"></i></span> Website scan</h3>
+            <div class="faq-content">
+              <p>Laat jouw huidige website grondig analyseren. 
+                Met onze uitgebreide website scan krijg je inzicht in de sterke en zwakke punten van jouw online aanwezigheid, 
+                inclusief snelheid, SEO, beveiliging, en gebruikerservaring. 
+                Ontvang een gedetailleerd rapport met praktische aanbevelingen om jouw website te optimaliseren.</p>
+            </div>
+            <i class="faq-toggle bi bi-chevron-right"></i>
+          </div><!-- End Faq item-->
+
+        </div>
+
+      </div>
+
+      <div class="col-lg-5 order-1 order-lg-2 why-us-img">
+        <img src="{% static 'homepage/img/why-us.png' %}" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="100">
+      </div>
+    </div>
+
+  </div>
+
+</section>
+<!-- /Why Us Section -->
+
+<!-- Portfolio Section -->
+<section id="portfolio" class="portfolio section">
+
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Portfolio</h2>
+    <p>Een selectie van projecten waar we trots op zijn</p>
+  </div><!-- End Section Title -->
+
+  <div class="container">
+
+    <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+
+      <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+        <li data-filter="*" class="filter-active">All</li>
+        <li data-filter=".filter-website">Web</li>
+        <li data-filter=".filter-app">App</li>
+      </ul><!-- End Portfolio Filters -->
+
+      <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-website">
+          <img src="{% static 'homepage/img/bw_small.png' %}" class="img-fluid" alt="">
+          <div class="portfolio-info">
+            <h4>BirchWeb</h4>
+            <p>Bedrijfspagina</p>
+            <a href="{% static 'homepage/img/bw_large.png' %}" title="BirchWeb" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+            <a href="https://www.birchweb.nl" title="Bezoek website" class="details-link"><i class="bi bi-link-45deg"></i></a>
+          </div>
+        </div><!-- End Portfolio Item -->
+        
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-website">
+          <img src="{% static 'homepage/img/asr_small.png' %}" class="img-fluid" alt="">
+          <div class="portfolio-info">
+            <h4>Autoservice Roel Sanders</h4>
+            <p>Bedrijfspagina</p>
+            <a href="{% static 'homepage/img/asr_large.png' %}" title="Autoservice Roel Sanders" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+            <a href="https://www.autoserviceroelsanders.nl" title="Bezoek website" class="details-link"><i class="bi bi-link-45deg"></i></a>
+          </div>
+        </div><!-- End Portfolio Item -->
+        
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+          <img src="{% static 'homepage/img/lp_small.png' %}" class="img-fluid" alt="">
+          <div class="portfolio-info">
+            <h4>Leespanda</h4>
+            <p>Webapplicatie</p>
+            <a href="{% static 'homepage/img/lp_large.png' %}" title="Leespanda" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+            <a href="https://www.leespanda.nl" title="Bezoek website" class="details-link"><i class="bi bi-link-45deg"></i></a>
+          </div>
+        </div><!-- End Portfolio Item -->
+
+      </div><!-- End Portfolio Container -->
+
+    </div>
+
+  </div>
+
+</section>
+<!-- /Portfolio Section -->
+
+
+{% endblock %}
