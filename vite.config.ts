@@ -20,12 +20,4 @@ export default defineConfig(({ mode }) => ({
     },
   },
   base: './',
-  css: {
-    postcss: {
-      plugins: {
-        tailwindcss: {},
-        autoprefixer: {},
-      },
-    },
-  },
 }))
