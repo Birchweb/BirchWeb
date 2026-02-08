@@ -1,0 +1,153 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap');
+
+@layer base {
+  :root {
+    /* Warm, bold palette - eigenwijs en uitnodigend */
+    --background: 30 25% 6%;
+    --foreground: 40 30% 95%;
+
+    --card: 30 20% 10%;
+    --card-foreground: 40 30% 95%;
+
+    --popover: 30 20% 10%;
+    --popover-foreground: 40 30% 95%;
+
+    /* Coral/oranje accent - energiek en vriendelijk */
+    --primary: 15 85% 60%;
+    --primary-foreground: 30 25% 6%;
+
+    /* Zachte cream voor secundaire elementen */
+    --secondary: 35 30% 85%;
+    --secondary-foreground: 30 25% 10%;
+
+    --muted: 30 15% 18%;
+    --muted-foreground: 35 15% 55%;
+
+    --accent: 25 90% 55%;
+    --accent-foreground: 30 25% 6%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 30 15% 20%;
+    --input: 30 15% 20%;
+    --ring: 15 85% 60%;
+
+    --radius: 0.75rem;
+
+    /* Custom journey colors */
+    --journey-glow: 15 85% 60%;
+    --journey-subtle: 35 20% 40%;
+    --journey-highlight: 45 100% 70%;
+
+    /* Sidebar defaults */
+    --sidebar-background: 30 20% 8%;
+    --sidebar-foreground: 40 30% 95%;
+    --sidebar-primary: 15 85% 60%;
+    --sidebar-primary-foreground: 30 25% 6%;
+    --sidebar-accent: 30 15% 15%;
+    --sidebar-accent-foreground: 40 30% 95%;
+    --sidebar-border: 30 15% 18%;
+    --sidebar-ring: 15 85% 60%;
+  }
+
+  .dark {
+    --background: 30 25% 6%;
+    --foreground: 40 30% 95%;
+    --card: 30 20% 10%;
+    --card-foreground: 40 30% 95%;
+    --popover: 30 20% 10%;
+    --popover-foreground: 40 30% 95%;
+    --primary: 15 85% 60%;
+    --primary-foreground: 30 25% 6%;
+    --secondary: 35 30% 85%;
+    --secondary-foreground: 30 25% 10%;
+    --muted: 30 15% 18%;
+    --muted-foreground: 35 15% 55%;
+    --accent: 25 90% 55%;
+    --accent-foreground: 30 25% 6%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 30 15% 20%;
+    --input: 30 15% 20%;
+    --ring: 15 85% 60%;
+    --sidebar-background: 30 20% 8%;
+    --sidebar-foreground: 40 30% 95%;
+    --sidebar-primary: 15 85% 60%;
+    --sidebar-primary-foreground: 30 25% 6%;
+    --sidebar-accent: 30 15% 15%;
+    --sidebar-accent-foreground: 40 30% 95%;
+    --sidebar-border: 30 15% 18%;
+    --sidebar-ring: 15 85% 60%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: 'Inter', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Space Grotesk', sans-serif;
+  }
+}
+
+@layer components {
+  .journey-section {
+    @apply min-h-screen flex flex-col justify-center px-6 py-20 md:px-12 lg:px-24;
+  }
+
+  .journey-title {
+    @apply text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight leading-tight;
+    font-family: 'Space Grotesk', sans-serif;
+  }
+
+  .journey-subtitle {
+    @apply text-lg md:text-xl text-muted-foreground max-w-2xl leading-relaxed;
+  }
+
+  .journey-glow {
+    box-shadow: 0 0 60px -15px hsl(var(--journey-glow) / 0.3);
+  }
+
+  .text-gradient {
+    @apply bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent;
+    background-size: 200% auto;
+    animation: gradient-shift 4s ease infinite;
+  }
+
+  .progress-line {
+    @apply fixed left-8 top-0 w-0.5 h-full bg-gradient-to-b from-transparent via-primary to-transparent opacity-20;
+  }
+}
+
+@layer utilities {
+  .animation-delay-200 {
+    animation-delay: 200ms;
+  }
+  .animation-delay-400 {
+    animation-delay: 400ms;
+  }
+}
+
+@keyframes gradient-shift {
+  0%, 100% {
+    background-position: 0% center;
+  }
+  50% {
+    background-position: 100% center;
+  }
+}
